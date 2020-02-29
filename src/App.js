@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/layouts/Header'
 import {Route} from 'react-router-dom'
 import Home from './page/Home'
-import Photo from './page/Photo'
+import Users from './page/Users'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
       <div className="container">
         <Route path="/" component={Home} exact></Route>
-        <Route path="/photo" component={Photo}></Route>
+        <Route path="/users" component={Users}></Route>
       </div>
     </div>
   );

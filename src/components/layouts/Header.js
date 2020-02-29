@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
 export default class Header extends Component {
+    
     render() {
         return (
             <div>
@@ -11,7 +12,7 @@ export default class Header extends Component {
                         <Link to="/">main</Link>
                     </li>
                     <li>
-                        <Link to="/photo">photo</Link>
+                        <Link to="/users">Users</Link>
                     </li>
                 </ul>
             </div>

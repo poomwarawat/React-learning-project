@@ -8,8 +8,16 @@ function CalculateAge(state=0, action){
     }
 }
 
+function Users(state={}, action){
+    switch(action.type){
+        case "LOAD_USERS": return action.payload
+        default : return state
+    }
+}
+
 const reducers = combineReducers({
-    Cal : CalculateAge
+    Cal : CalculateAge,
+    Users
 })   
 
 
